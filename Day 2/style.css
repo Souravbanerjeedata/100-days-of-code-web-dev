@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f7f5ff;
+  color: #1f2555;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.green-background {
+  background: linear-gradient(45deg, #40ded3, #3edfa7);
+  width: 400px;
+  height: 560px;
+  border-radius: 2rem;
+  position: absolute;
+  left: 2rem;
+  top: -3.9rem;
+  z-index: -1;
+}
+
+.content {
+  background: #fff;
+  width: 70%;
+  border-radius: 2rem;
+  padding: 3rem;
+  box-shadow: 0 1rem 3rem #d7f2f7;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.compose {
+  color: #fff;
+  background-color: #1e2554;
+  width: 100%;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.compose:hover {
+  background-color: #41476d;
+}
+
+.pencil-icon {
+  color: #fff;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.8rem 0;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0.9rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.message:hover {
+  background-color: rgb(236, 234, 234);
+}
+
+.user-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0.25rem #1e255464);
+  padding: 0.25rem;
+  background-color: #fff;
+  color: #1e2554;
+  position: relative;
+}
+
+h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.text p {
+  font-size: 0.8rem;
+}
+
+.days-ago {
+  font-size: 0.7rem;
+  position: absolute;
+  right: 0.9rem;
+  top: 1rem;
+  color: rgb(162, 147, 147);
+}
+
+.dot {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  width: 1rem;
+  height: 1rem;
+  background: #3edfa7;
+  position: absolute;
+  left: 2.9rem;
+  top: 0.7rem;
+}
+
+.busy {
+  background: #de7943;
+}
+
+.not-available {
+  background: #d4d4d4;
+}
+
+@media (max-width: 600px) {
+  .green-background {
+    width: 100%;
+    left: unset;
+  }
+
+  .content {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+
+  .message {
+    font-size: 0.7rem;
+  }
+
+  .days-ago {
+    font-size: 0.6rem;
+  }
+}

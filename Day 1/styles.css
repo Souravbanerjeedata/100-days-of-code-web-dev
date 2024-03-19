@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+section.main-container {
+  width: 90%;
+  max-width: 600px;
+  border: 1px solid #f0f0ff8c;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 2.5rem 1.5rem -1.2rem #f0f0ff;
+  position: relative;
+  transition: 0.5s;
+}
+
+.cross-icon {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  border: 1px solid #e3e3e3;
+  border-radius: 50%;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.collections {
+  margin-top: 2rem;
+}
+
+.collection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin-bottom: 1.5rem;
+}
+
+.collection:hover {
+  border-color: #f0f0ff;
+  border-radius: 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.collection > img {
+  border-radius: 0.5rem;
+  border: 1px solid #f0f0ff;
+  box-shadow: 0 1rem 1rem -0.8rem #bdbdfa;
+  object-fit: cover;
+}
+
+.collection-info > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.dot {
+  background: #000;
+  border-radius: 50%;
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+button.create-new {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #d24964;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+.create-new:hover {
+  background: #fabde227;
+}
+
+.icon-plus {
+  border-radius: 50%;
+  background: #d2496515;
+  padding: 0.25rem;
+}
+
+button.save {
+  color: #fff;
+  width: 50%;
+  max-width: 150px;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background: linear-gradient(90deg, #c584f0, #fb6d9e);
+}
+
+button.save:hover {
+  box-shadow: 0 0 1.2rem #e492fb;
+  transform: scale(1.1);
+}
+
+.check-icon {
+  border-radius: 50%;
+  border: 5px solid #bdbdfa;
+  padding: 0.25rem;
+  color: #000;
+}
+
+.check {
+  margin-left: auto;
+}
+
+@media (max-width: 500px) {
+  .collection {
+    flex-direction: column;
+    text-align: center;
+  }
+}

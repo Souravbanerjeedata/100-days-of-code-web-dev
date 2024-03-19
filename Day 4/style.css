@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0d0d42;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f5f6ff;
+}
+
+.notification-container {
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.blue-section {
+  width: 300px;
+  height: 200px;
+  background: #e8e9ff;
+  position: absolute;
+  z-index: -1;
+  border-radius: 2rem;
+  left: -5.5rem;
+  top: -6.5rem;
+}
+
+.notification {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 1rem 1.5rem #e6e6f2;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.icon-tabler-bell {
+  position: absolute;
+  right: -0.1rem;
+  top: -3.5rem;
+  background: #0d0d42;
+  color: #f5f6ff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: 0.5s;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.icon-tabler-bell:hover {
+  color: #0d0d42;
+  background: #f5f6ff;
+  border-color: #0d0d42;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.info {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-tabler-mail {
+  background: #ffe8f3;
+  padding: 1rem;
+  color: #cf4273;
+  border-radius: 0.3rem;
+  min-width: 70px;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+}
+
+p {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+button {
+  border-radius: 2rem;
+  padding: 0.35rem 0.8rem;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid;
+  gap: 0.25rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.twitter {
+  color: #1388ba;
+  border-color: #1388ba;
+  margin-left: -5rem;
+}
+
+.twitter:hover {
+  background: #1388ba;
+  color: #fff;
+}
+.facebook {
+  color: #3964a3;
+  border-color: #3964a3;
+}
+
+.facebook:hover {
+  background: #3964a3;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .twitter {
+    margin-left: unset;
+  }
+}
