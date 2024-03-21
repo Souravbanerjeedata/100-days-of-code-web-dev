@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Components</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="gray-background"></div>
+    <main>
+      <section class="headphones">
+        <img
+          src="./img/headphone.avif"
+          alt="Headphone image"
+          width="300"
+          height="200"
+        />
+        <h2>Going Wireless With Your Headphones</h2>
+        <div class="headphone-profile">
+          <img
+            src="./img/profile.avif"
+            alt="profile image"
+            width="50"
+            height="50"
+            id="profile"
+          />
+          <div class="profile-info">
+            <h5>Cameron Russell</h5>
+            <p class="date">Feb 15 2021</p>
+          </div>
+        </div>
+        <p>
+          The first category of the free backgrounds has plenty of options, but
+          the number of backgrounds is limited to a few hundreds.
+        </p>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </section>
+      <section class="locations">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-x"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M18 6l-12 12" />
+          <path d="M6 6l12 12" />
+        </svg>
+        <h2>Choose Location</h2>
+        <div class="locations-container">
+          <p class="location">DE - Germany</p>
+          <p class="location">NO - Norway</p>
+          <p class="location">FI - Suomi</p>
+          <p class="location">EU - Global</p>
+          <p class="location">DK - Denmark</p>
+          <p class="location selected">SE - Sweden</p>
+        </div>
+      </section>
+      <section class="avatar-profile">
+        <img
+          src="./img/avatar.avif"
+          alt="Avatar profile"
+          width="150"
+          height="150"
+        />
+        <div class="avatar-infos">
+          <div class="name">
+            <h3>Lizzie Bennett</h3>
+            <h4>General Manager</h4>
+
+            <div class="email">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+                />
+                <path d="M3 7l9 6l9 -6" />
+              </svg>
+              <p>Lizzie.bennett@company.com</p>
+            </div>
+            <div class="phone">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-phone"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+                />
+              </svg>
+              <p>+ 47 589 55 458</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
