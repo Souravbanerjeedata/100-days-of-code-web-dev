@@ -1,0 +1,112 @@
+*,
+* ::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  min-height: 90vh;
+  color: #202247;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f5f8ff;
+  padding: 5rem 1rem;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.positions-container {
+  width: 90%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.position {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 1.5rem 1.5rem #dee4f3;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.position-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.icon-tabler-brush {
+  background: #cfcffc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.icon-tabler-code {
+  background: #ffc9da;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.icon-tabler-settings {
+  background: #dddbff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.icon-tabler-users {
+  background: #cde9fa;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.icon-tabler-report-analytics {
+  background: #e8d5e2;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.icon-tabler-school {
+  background: #e8dade;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #cbcbd4;
+  border-radius: 0.25rem;
+  padding: 0.8rem;
+  width: 100%;
+  transition: 0.5s;
+}
+
+button:hover {
+  color: #fff;
+  background: #202247;
+}
+
+p {
+  color: #202247a0;
+  font-size: 0.8rem;
+  max-width: 650px;
+  line-height: 1.5;
+}
