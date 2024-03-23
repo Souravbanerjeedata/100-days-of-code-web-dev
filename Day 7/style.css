@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, #daccc8, #b39c94);
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+.shadow-bg {
+  background: #c2aea7;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  position: absolute;
+  top: -3rem;
+  left: -3rem;
+  z-index: -1;
+}
+
+.main-container {
+  width: 90%;
+  max-width: 400px;
+  background: #edebe4;
+  border-radius: 2rem;
+  padding: 3rem;
+  position: relative;
+  box-shadow: 0 2rem 2rem #a38683;
+  margin-bottom: 3rem;
+}
+
+.upper-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.icon-tabler-dots {
+  cursor: pointer;
+}
+
+.upper-part p {
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.numbers {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.numbers span {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.members,
+.online {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background: #000;
+  color: #fff;
+  padding: 0.8rem;
+  display: block;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  flex: 1;
+  transition: 0.5s;
+}
+
+.join:hover,
+.joined {
+  background: transparent;
+  color: #000;
+  border-color: #000;
+}
+
+.date {
+  color: #585782;
+  font-size: 0.8rem;
+}
+
+.post {
+  width: 90%;
+  max-width: 400px;
+  background: #edebe4;
+  border-radius: 2rem;
+  padding: 3rem;
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.post h5 {
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.post textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 60px;
+}
+
+.icon-tabler-x {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: 0.5s;
+  padding: 0.15rem;
+}
+
+.icon-tabler-x:hover {
+  border-color: #000;
+}
+
+@media (max-width: 350px) {
+  .main-container {
+    padding: 1.5rem;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
