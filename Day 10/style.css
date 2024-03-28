@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #dfe0f2;
+  color: #2a317d;
+}
+
+.main {
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+h3 {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.6rem;
+}
+
+.circle-div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.circle {
+  outline: 1px solid #2a317d;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.selected {
+  outline: 4px solid #2a317d;
+}
+
+.card {
+  margin-left: 1.9rem;
+}
+
+.card-number,
+.code,
+.card-time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  border: 1px solid #2a317d7f;
+  border-radius: 0.25rem;
+}
+
+.card-number {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-top: 0.5rem;
+}
+.code {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.card-time {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.code input {
+  min-width: 3rem;
+}
+
+.card-time input {
+  min-width: 3rem;
+}
+
+.icon {
+  min-width: 1.3rem;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+}
+
+#date,
+#month {
+  min-width: 1.5rem;
+}
+
+#date {
+  margin-left: -4rem;
+}
+
+.card-time,
+.code {
+  width: 50%;
+}
+
+.remember-card {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox {
+  border: 1px solid #2a317d;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.checked {
+  background: #2a317d;
+  color: #fff;
+}
+
+.pay-later p {
+  margin-left: 1.9rem;
+}
+
+button {
+  width: 100%;
+  padding: 1rem 0;
+  background: #2a317d;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  margin-top: 2rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2a317dcd;
+}
