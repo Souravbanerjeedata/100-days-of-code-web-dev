@@ -40,7 +40,8 @@ p {
 }
 
 .current-themes,
-input {
+input,
+.protocol {
   border: 1px solid #5a48bd4f;
   padding: 0.5rem;
   border-radius: 0.25rem;
@@ -48,29 +49,35 @@ input {
 }
 
 .current-themes,
-.button-container {
+.button-container,
+.protocol,
+.selected-container,
+.social-containers {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.themes-list {
+.themes-list,
+.protocol-list {
   display: none;
   list-style: none;
   font-size: 0.8rem;
   background: #5947bc26;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  transition: 0.5s;
   cursor: pointer;
 }
 
-.themes-list > li {
+.themes-list > li,
+.protocol-list > li {
   padding: 0.5rem;
   border-radius: 0.25rem;
+  transition: 0.5s;
 }
 
-.themes-list > li:hover {
+.themes-list > li:hover,
+.protocol-list > li:hover {
   background: #5948bd;
   color: #fff;
 }
@@ -125,12 +132,44 @@ button {
   line-height: 1.5;
 }
 
-.protocol {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+.selected-theme {
   border: 1px solid #5a48bd4f;
-  padding: 0.5rem;
   border-radius: 0.25rem;
-  max-width: 100px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.socials {
+  margin-top: 2rem;
+}
+
+.social-containers {
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.icon-tabler-brand-facebook {
+  background: #3e5e96;
+  color: #fff;
+}
+
+.icon-tabler-brand-twitter {
+  background: #29a3f0;
+  color: #fff;
+}
+
+.icon-tabler-brand-facebook,
+.icon-tabler-brand-twitter {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.protocol {
+  cursor: pointer;
+}
+
+.protocol-list {
+  margin-top: 0.5rem;
+  width: 26%;
 }
