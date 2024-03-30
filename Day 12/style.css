@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f3f0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3d332b;
+}
+
+.main {
+  background: #fff;
+  border-radius: 0.25rem;
+  padding: 3rem 2rem;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 1rem 1rem -0.5rem #e8dacc;
+  position: relative;
+  z-index: 1;
+}
+
+.widget-section {
+  margin-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-tabler-dots {
+  box-shadow: 0 0 0.5rem #e5d3c3;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.menu-list {
+  box-shadow: 0 0 0.5rem #e5d3c3;
+  border-radius: 0.25rem;
+  list-style: none;
+  padding: 0.5rem;
+  width: 8rem;
+  margin-top: 0.3rem;
+  display: none;
+  cursor: pointer;
+}
+
+.menu-container {
+  width: 130px;
+  position: absolute;
+  right: 1.85rem;
+  top: 5.2rem;
+  z-index: 2;
+  background: #fff;
+}
+
+.menu-list li {
+  padding: 0.8rem;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+}
+
+.menu-list li:hover {
+  background: #f5f3f0;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.circle,
+.square {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #c3b2a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.circle,
+.radio-btn {
+  border-radius: 50%;
+}
+
+.radio-btn,
+.radio-square {
+  width: 1rem;
+  height: 1rem;
+}
+
+.selected {
+  background: #a8602f;
+}
+
+.square {
+  border-radius: 0.25rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.widget-section {
+  margin-bottom: 2rem;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+button {
+  width: 100%;
+  min-height: 2.4rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 0.7rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.save {
+  background: #edab2f;
+}
+
+.save:hover {
+  background: #edaa2fa5;
+}
+
+.widget-options,
+.others {
+  margin-top: 1.5rem;
+}
