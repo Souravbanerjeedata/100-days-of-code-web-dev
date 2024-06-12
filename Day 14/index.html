@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistic Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Search for statistics</h1>
+      <form role="search">
+        <p class="search-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+          </svg>
+          <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Enter any keyword"
+          />
+        </p>
+      </form>
+      <div class="statistic-container">
+        <section class="statistic">
+          <h2>Price Calculator</h2>
+          <p>
+            How much does 1 Eur in 1963 equal in today's prices? Adjust the
+            rent?
+          </p>
+          <button>
+            Calculate price changes
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M9 6l6 6l-6 6" />
+            </svg>
+          </button>
+        </section>
+        <section class="statistic">
+          <h2>Name Statistics</h2>
+          <p>Find names with different statistics.</p>
+          <button>
+            Search by name
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M9 6l6 6l-6 6" />
+            </svg>
+          </button>
+        </section>
+        <section class="statistic">
+          <h2>Stats Table</h2>
+          <p>Find detailed tables with time and create your own.</p>
+          <button>
+            Go to tables
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M9 6l6 6l-6 6" />
+            </svg>
+          </button>
+        </section>
+        <section class="info">
+          <h2>Calendar</h2>
+          <p>See the advance release of calendars in 2021</p>
+          <a href="#">Go to calendar</a>
+        </section>
+        <section class="info">
+          <h2>Subscribe to news</h2>
+          <p>Get the latest statistics releases and publications by email.</p>
+          <a href="#">Receive email alerts</a>
+        </section>
+        <section class="info">
+          <h2>API</h2>
+          <p>Easily retrieve and integrate Statistics with your own system.</p>
+          <a href="#">Open API</a>
+        </section>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

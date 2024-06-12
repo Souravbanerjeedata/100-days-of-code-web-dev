@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #f2f3fa;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+  padding: 5rem 0;
+}
+
+main {
+  background: #ffffff;
+  width: 90%;
+  max-width: 1000px;
+  border: 5px solid black;
+  border-radius: 1.2rem;
+  padding: 5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.search-container {
+  border: 2px solid #dbdbdb;
+  border-radius: 0.25rem;
+  padding: 0.8rem;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  align-content: center;
+  gap: 0.5rem;
+  margin: 1.5rem auto 3rem auto;
+}
+
+form {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.icon-tabler-search {
+  cursor: pointer;
+}
+
+.statistic-container {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  column-gap: 1rem;
+  row-gap: 2rem;
+  justify-content: center;
+}
+
+.statistic {
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.statistic,
+.info {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.statistic p,
+.info p {
+  margin-bottom: 1.5rem;
+}
+
+.statistic:first-child {
+  background: #e4e7f6;
+}
+
+.statistic:first-child:hover {
+  box-shadow: 0 0.5rem 1rem #e5e9ff;
+}
+
+.statistic:nth-child(2) {
+  background: #f6e4f5;
+}
+
+.statistic:nth-child(2):hover {
+  box-shadow: 0 0.5rem 1rem #ffe3fe;
+}
+
+.statistic:nth-child(3) {
+  background: #f9e5e5;
+}
+
+.statistic:nth-child(3):hover {
+  box-shadow: 0 0.5rem 1rem #ffdcdc;
+}
+
+button {
+  border: 1px solid #cecece92;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  background: transparent;
+  width: max-content;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+button:hover {
+  background: #fff;
+}
+
+a {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
