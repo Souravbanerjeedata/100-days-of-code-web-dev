@@ -7,26 +7,25 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  background: #f2f3fa;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4fb;
   font-family: "Nunito", sans-serif;
   padding: 5rem 0;
 }
 
 main {
-  background: #ffffff;
   width: 90%;
   max-width: 1000px;
-  border: 5px solid black;
-  border-radius: 1.2rem;
-  padding: 5rem 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 1.2rem;
+  border: 5px solid #000;
+  background: #fff;
+  padding: 5rem 1.5rem;
 }
 
 h1 {
@@ -44,13 +43,13 @@ p {
 }
 
 .search-container {
-  border: 2px solid #dbdbdb;
+  border: 2px solid #dcdcdc;
   border-radius: 0.25rem;
   padding: 0.8rem;
   width: 100%;
   max-width: 500px;
   display: flex;
-  align-content: center;
+  align-items: center;
   gap: 0.5rem;
   margin: 1.5rem auto 3rem auto;
 }
@@ -60,31 +59,32 @@ form {
 }
 
 input {
-  width: 100%;
   border: none;
   outline: none;
+  width: 100%;
+  background: transparent;
 }
 
 .icon-tabler-search {
   cursor: pointer;
 }
 
-.statistic-container {
-  margin: 0 auto;
+.statistics-container {
   width: 100%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  justify-items: center;
   column-gap: 1rem;
   row-gap: 2rem;
-  justify-content: center;
 }
 
-.statistic {
+.statistics {
   border-radius: 0.5rem;
   transition: 0.5s;
 }
 
-.statistic,
+.statistics,
 .info {
   padding: 2rem 1.5rem;
   display: flex;
@@ -93,44 +93,44 @@ input {
   width: 100%;
 }
 
-.statistic p,
+.statistics p,
 .info p {
   margin-bottom: 1.5rem;
 }
 
-.statistic:first-child {
+.statistics:first-child {
   background: #e4e7f6;
 }
 
-.statistic:first-child:hover {
+.statistics:first-child:hover {
   box-shadow: 0 0.5rem 1rem #e5e9ff;
 }
 
-.statistic:nth-child(2) {
+.statistics:nth-child(2) {
   background: #f6e4f5;
 }
 
-.statistic:nth-child(2):hover {
+.statistics:nth-child(2):hover {
   box-shadow: 0 0.5rem 1rem #ffe3fe;
 }
 
-.statistic:nth-child(3) {
+.statistics:nth-child(3) {
   background: #f9e5e5;
 }
 
-.statistic:nth-child(3):hover {
+.statistics:nth-child(3):hover {
   box-shadow: 0 0.5rem 1rem #ffdcdc;
 }
 
 button {
-  border: 1px solid #cecece92;
   border-radius: 2rem;
+  border: 1.5px solid #cecece92;
+  background: transparent;
   display: flex;
   align-items: center;
   padding: 0.25rem 0.5rem;
-  background: transparent;
-  width: max-content;
   cursor: pointer;
+  width: max-content;
   transition: 0.5s;
   font-weight: 700;
   font-size: 0.7rem;
