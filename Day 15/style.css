@@ -31,6 +31,27 @@ body {
 
 .subscribed {
   display: none;
+  position: relative;
+  text-align: center;
+}
+
+.subscribed p {
+  margin-top: 1.5rem;
+  line-height: 1.4;
+}
+
+.subscribed p span {
+  font-size: 1rem;
+}
+
+.icon-tabler-x {
+  cursor: pointer;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  border: 1px solid #abaec2;
+  border-radius: 50%;
+  padding: 0.1rem;
 }
 
 .icon-container {
